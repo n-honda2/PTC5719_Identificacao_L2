@@ -1,0 +1,11 @@
+# Arquivos de backup e autosave do MATLAB
+*.asv
+*.~*
+
+# Cache e binários do Simulink
+slprj/
+*.slxc
+*.mexa64
+
+# Arquivos de dados pesados (opcional, dependendo de como você salvar as variáveis do workspace)
+# *.mat
