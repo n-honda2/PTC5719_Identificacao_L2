@@ -11,6 +11,10 @@ y_limpa = out.y.signals(1).values;
 y_baixa = out.y.signals(2).values;
 y_alta  = out.y.signals(3).values;
 
+u_sim    = out.u_sim;    % Sinal de entrada u
+e1_baixa = out.e1_baixa; % Perturbação medida (baixa)
+e1_alta  = out.e1_alta;  % Perturbação medida (alta)
+
 % 3. Geração do sinal de entrada u (Necessário para a identificação posterior)
 u = zeros(size(t));
 u(t >= 275) = 0.1; 
